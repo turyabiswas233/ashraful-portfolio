@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Md. Ashraful Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        main section h1.logo {
+          @apply text-4xl font-extrabold text-center my-5;
+        }
+        .seperator {
+          @apply absolute w-[90%] h-1 content-[] border-2 border-red-500 p-1 rounded-[100%] left-[5%] top-0;
+        }
+      }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header
+      class="w-full px-10 py-6 md:px-16 md:py-8 flex justify-between border-b-4 border-indigo-900 sticky top-0 left-0 bg-[#121420] z-40"
+    >
+      <h2 class="logo font-extrabold text-3xl">
+        <a href="/">ASHTUR</a>
+      </h2>
+      <!-- navbar || menubar -->
+      <nav class="w-auto flex justify-center items-center">
+        <ul class="w-auto flex justify-center items-center gap-5 font-semibold">
+          <li
+            class="transition-colors duration-500 text-blue-400 hover:text-blue-700 hover:underline"
+          >
+            <a href="#about">About</a>
+          </li>
+          <li
+            class="transition-colors duration-500 text-blue-400 hover:text-blue-700 hover:underline"
+          >
+            <a href="#skill">Skill</a>
+          </li>
+          <li
+            class="transition-colors duration-500 text-blue-400 hover:text-blue-700 hover:underline"
+          >
+            <a href="#service">Service</a>
+          </li>
+
+          <li
+            class="transition-colors duration-500 text-blue-400 hover:text-blue-700 hover:underline"
+          >
+            <a href="#contact"> Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- hero -->
+      <section class="hero text-center mx-auto">
+        <p class="text-xl tracking-tighter my-3">Hello & welcome</p>
+        <h2 class="animate-pulse text-4xl">
+          I'm <span class="text-purple-400">Md. Ashraful Islam</span>
+        </h2>
+        <p class="text-base tracking-tighter my-3">
+          I am here to debug your all
+          <span class="text-rose-300">IT problems</span>
+        </p>
+      </section>
+      <!-- my info -->
+      <section class="details relative scroll-mt-20 md:scroll-mt-24" id="about">
+        <span class="seperator"></span>
+        <h1 class="logo">About Me</h1>
+        <p>
+          Throughout my career, I have contributed to the development of
+          successful web applications and websites, demonstrating a keen
+          attention to detail and an ability to consistently deliver exceptional
+          results. I take pride in my ability to adapt to new technologies and
+          environments, allowing me to quickly onboard and become a productive
+          member of any team.
+        </p>
+      </section>
+      <!-- skills -->
+      <section class="skills relative scroll-mt-20 md:scroll-mt-24" id="skill">
+        <span class="seperator"></span>
+        <h1 class="logo">Skills</h1>
+        <p>As a skilled web developer, I have honed my expertise in:</p>
+        <div
+          class="skills-article flex w-auto justify-between items-center p-5"
+        >
+          <ul>
+            <li class="font-extrabold pointer-events-none">Languages</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+          </ul>
+          <ul>
+            <li class="font-extrabold pointer-events-none">
+              Front-end Framework
+            </li>
+            <li>REACT JS</li>
+            <li>NEXT JS</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- service i will provide -->
+      <section
+        class="service relative scroll-mt-20 md:scroll-mt-24"
+        id="service"
+      >
+        <span class="seperator"></span>
+        <h1 class="logo">Service</h1>
+        <p>
+          As I look to take my skills and experience to the next level, I am
+          eager to explore opportunities that allow me to work on challenging
+          projects and continue to grow both professionally and personally.
+          Let's connect and discuss how I can bring value to your organization.
+        </p>
+      </section>
+
+      <section
+        class="contact relative scroll-mt-20 md:scroll-mt-24 mx-auto"
+        id="contact"
+      >
+        <span class="seperator"></span>
+        <h1 class="logo">Contact</h1>
+        <div class="flex items-start justify-center gap-10">
+          <form>
+            <section>
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="John Stephen"
+              />
+            </section>
+            <!-- email -->
+            <section>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="john@example.com"
+              />
+            </section>
+            <!-- phone number -->
+            <section>
+              <label for="telnum">Phone Number</label>
+              <span class="bg-slate-700/50 rounded-md text-slate-300/70 px-2"
+                >+88</span
+              >
+              <input
+                type="tel"
+                maxlength="11"
+                minlength="11"
+                name="telnum"
+                id="telnum"
+                required
+                placeholder="01xxxxxxxxx"
+              />
+            </section>
+            <button
+              class="px-6 py-2 text-center bg-blue-500 w-fit rounded-lg my-5 transition-colors ease-out hover:bg-blue-600"
+              id="sendMsg"
+              type="submit"
+            >
+              Send
+            </button>
+          </form>
+          <!-- social link short -->
+          <section class="ash">
+            <div
+              class="badge-base LI-profile-badge"
+              data-locale="en_US"
+              data-size="medium"
+              data-theme="dark"
+              data-type="VERTICAL"
+              data-vanity="md-ashraful-islam-a7b375227"
+              data-version="v1"
+            ></div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="p-12 w-auto relative">
+      <span class="seperator"></span>
+      <h3 class="font-extrabold text-3xl">ASHTUR Team</h3>
+      <div
+        class="foo_main flex flex-col md:flex-row justify-around gap-3 w-full"
+      >
+        <div class="left-first">
+          <ul class="my-3">
+            <li>Products</li>
+            <li>Feature</li>
+            <li>Integrations</li>
+            <li>Price & planing</li>
+            <li>Out method</li>
+          </ul>
+        </div>
+        <div class="middle-second">
+          <ul class="my-3">
+            <li>Company</li>
+            <li>About us</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div class="right-third">
+          <ul class="my-3">
+            <li>Resources</li>
+            <li>Community</li>
+            <li>Terms of service</li>
+            <li>Report a vulnerability</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="text-zinc-300/30 copyright-text">
+          <span class="text-zinc-400 font-semibold">&copy; ASHTUR.com</span> -
+          All rights reserved
+        </p>
+        <!-- linked in -->
+        <div class="social_links flex gap-5 py-3">
+          <a
+            href="https://www.linkedin.com/in/md-ashraful-islam-a7b375227/"
+            target="_blank"
+          >
+            <span class="linkedin fill-sky-600"></span>
+          </a>
+          <span class="github fill-zinc-600"></span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- all scripts -->
+    <script
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript" src="./median.js"></script>
+  </body>
+</html>
